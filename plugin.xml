@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    id="com.mnd.cordova.plugin.HelloWorld"
+    version="1.0.0">
+
+    <name>HelloWorld</name>
+
+  <description>
+    MND Cordova plugin example
+  </description>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+	    <feature name="HelloWorld">
+	        <param name="android-package" value="com.mnd.cordova.plugin.HelloWorld"/>
+	    </feature>
+    </config-file>
+
+    <source-file src="src/com/mnd/cordova/plugin/HelloWorld.java" target-dir="src/com/mnd/cordova/plugin" />
+  </platform>
+
+  <!-- more platforms here -->
+
+</plugin>
